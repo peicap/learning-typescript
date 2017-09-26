@@ -18,6 +18,7 @@
   "homepage": "https://github.com/peicap/typescript-starter#readme",
   "dependencies": {
     "express": "^4.15.5",
-    "install": "^0.10.1"
+    "install": "^0.10.1",
+    "pouchdb": "^6.3.4"
   }
 }
