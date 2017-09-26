@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "outFile": "index.js",
+        "module": "amd"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
