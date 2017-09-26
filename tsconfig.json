@@ -4,9 +4,9 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "outDir": "./dist",
-        "outFile": "index.js",
-        "module": "amd"
+        "outFile": "./dist/index.js",
+        "module": "amd",
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules"
