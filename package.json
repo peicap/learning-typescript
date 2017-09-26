@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.15.5",
     "install": "^0.10.1",
+    "lite-server": "^2.3.0",
     "pouchdb": "^6.3.4"
   }
 }

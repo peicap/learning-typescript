@@ -7,7 +7,7 @@ import * as Pouch from 'pouchdb'
 
 const db = new Pouch('items')
 
-class pouch {
+export class pouch {
     async fetch() {
         try {
             let result = await db.allDocs({
@@ -38,5 +38,3 @@ class pouch {
         catch (error) { console.log(error)} 
     }
 }
-
-export default pouch

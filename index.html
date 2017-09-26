@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript Cashier</title>
+    <link rel="stylesheet" href="./dist/css/normalize.css">
+    <link rel="stylesheet" href="./dist/css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" async>    
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top: 50px;">TypeScript and PouchDB</h1>
+        <p>A simple project for learning the basic concept of pouchdb. The repository can be found at <a href="https://github.com/peicap/typescript-starter">Github.</a></p>
+        <hr>
+        <div class="row">
+            <div class="col">
+                    <label for="nameInput">Insert new item in DB</label>
+                    <input class="u-full-width" type="text" placeholder="Name here" id="nameInput">
+                    <a class="button button-primary" onclick="" href="#">Submit</a>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 style="margin-top: 50px;">Local Storage</h3>
+                <!-- display items -->
+                <table class="u-full-width">
+                    <thead>
+                        <tr id="thead-tr">
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>ID</th>
+                            <th>Rev</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script></script>
+<script src="./dist/index.js"></script>
+</html>
