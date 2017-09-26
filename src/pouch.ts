@@ -8,6 +8,8 @@ import * as Pouch from 'pouchdb'
 const db = new Pouch('items')
 
 export class pouch {
+
+    constructor() { }
     async fetch() {
         try {
             let result = await db.allDocs({
@@ -18,7 +20,7 @@ export class pouch {
         catch (error) { console.log(error) }
     }
 
-    async create(name) {
+    async create(name: string) {
         try{ let reponse = await db.post({name}) }
         catch (error) { console.log(error) }
     }

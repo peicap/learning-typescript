@@ -6,7 +6,13 @@
         "sourceMap": true,
         "outFile": "./dist/index.js",
         "module": "amd",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "lib": [
+            "es2015",
+            "es6",
+            "es5",
+            "dom"
+        ]
     },
     "exclude": [
         "node_modules"

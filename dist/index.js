@@ -33,15 +33,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-define("index", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var Main = (function () {
-        function Main() {
-        }
-        return Main;
-    }());
-});
 define("pouch", ["require", "exports", "pouchdb"], function (require, exports, Pouch) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -139,6 +130,14 @@ define("pouch", ["require", "exports", "pouchdb"], function (require, exports, P
         };
         return pouch;
     }());
-    exports.default = pouch;
+    exports.pouch = pouch;
 });
-//# sourceMappingURL=index.js.map
+define("index", ["require", "exports", "pouch"], function (require, exports, db) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var pouch = new db.pouch;
+    function Create(el) {
+        console.log(el);
+    }
+    ;
+});
